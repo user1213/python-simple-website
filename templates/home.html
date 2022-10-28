@@ -3,12 +3,24 @@
 <h2>Home Page</h2>
 <p>This is the home page!</p>
 
+<table>
+    <thead>
+      <tr>
+        <th>Key</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for key, value in item.items() %}
+     <tr>
+         <td> {{ key }} </td>
+         <td> {{ value }} </td>
+     </tr>
+    {% endfor %}
+    </tbody>
+  </table>
 
-<form action="/account" method="POST">
-    <input type="text" name="name" id="name" placeholder="Your Name" class="form-feild"><br>
-    <button type="submit" class="add-btn">See Account Page</button>
-</form>
+
 <br>
 
-<p>Note how this page can be accesed on both '/' and '/home'. Look into app.py for more information</p>
 {% endblock %}
