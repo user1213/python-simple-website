@@ -1,0 +1,14 @@
+version: 1.0
+runtime: python3
+build:
+  commands:
+    build:
+      - python -m pip install flask
+run:
+  runtime-version: 3.8
+  command: python app.py
+  network:
+    port: 8080
+  env:
+    name: env-name1
+    value: env-value1
