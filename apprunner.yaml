@@ -9,5 +9,5 @@ run:
   network:
     port: 8080
   env:
-    name: env-name1
-    value: env-value1
+    - name: MY_VAR_EXAMPLE
+      value: "example"
