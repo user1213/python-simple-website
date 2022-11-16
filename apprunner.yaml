@@ -16,3 +16,5 @@ run:
       value-from: "arn:aws:secretsmanager:us-east-1:627287978678:secret:testingstackAppRunnerConstr-kJFXde2ULKbT-S7t8xR:username::"
     - name: my-parameter
       value-from: "arn:aws:ssm:us-east-1:627287978678:parameter/parameter-name"
+    - name: my-parameter-only-name
+      value-from: "parameter-name"
