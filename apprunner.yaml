@@ -18,3 +18,5 @@ run:
       value-from: "arn:aws:ssm:us-east-1:627287978678:parameter/parameter-name"
     - name: my-parameter-only-name
       value-from: "parameter-name"
+    - name: my-parameter-cross-account
+      value-from: "arn:aws:ssm:us-east-1:123456789012:parameter/parameter-name"
